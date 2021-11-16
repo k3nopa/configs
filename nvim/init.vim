@@ -1,17 +1,19 @@
-syntax enable
-
 set noerrorbells
-set number
+set relativenumber
 set tabstop=4
 set softtabstop=0 expandtab
 set shiftwidth=4
+set autoindent
 set nowrap
 set smartcase
 set noswapfile
 set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
+set scrolloff=7
+set mouse=a
 
+syntax enable
 inoremap ii <Esc> 
 let g:mapleader = "\<Space>"
 set timeoutlen=500
@@ -88,5 +90,5 @@ endif
 
 " Remap for show all errors & jump to next error
 
-" Prettier
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+" Coc-Prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
