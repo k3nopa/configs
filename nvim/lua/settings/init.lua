@@ -53,3 +53,6 @@ require'nvim-tree'.setup {
 }
 
 vim.api.nvim_command([[ autocmd CursorHold * lua vim.diagnostic.open_float() ]])
+
+-- Statusline
+require('lualine').setup()

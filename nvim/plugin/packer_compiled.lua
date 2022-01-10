@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/afiqnaufal/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/afiqnaufal/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/Users/afiqnaufal/.local/share/nvim/site/pack/packer/start/nightfox.nvim",

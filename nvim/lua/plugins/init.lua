@@ -28,5 +28,7 @@ return require('packer').startup( function()
 
     -- Autopairs
     use 'jiangmiao/auto-pairs'
+    -- Statusline
+    use 'nvim-lualine/lualine.nvim'
 
 end)
