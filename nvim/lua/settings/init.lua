@@ -29,6 +29,7 @@ local keymap = vim.api.nvim_set_keymap
 local keymap_opts = { noremap = true, silent = true }
 
 vim.g.mapleader = ',' 
+keymap('i', 'ii', '<Esc>', keymap_opts)
     -- Split Navigation.
 keymap('n', '<c-j>', '<c-w>j', keymap_opts)
 keymap('n', '<c-h>', '<c-w>h', keymap_opts)
@@ -41,6 +42,7 @@ keymap('n', 'ff', ':Telescope find_files<CR>', keymap_opts)
 keymap('n', 'fg', ':Telescope live_grep<CR>', keymap_opts)
 
 -- Plugins Settings.
+
 require('settings.autocmp')
 require('settings.language-server')
 require('settings.treesitter-conf')
